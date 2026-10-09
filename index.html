@@ -1,28 +1,61 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <style>
-            body {
-                background-color: #171818;
-            }
-        </style>
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="container-h1">
-            <h1>Cool Music</h1>
-        </div>
+<body>
+    <div class="layout-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar -menu">
 
-        <div class="container-1">
-            <h2>Welcome! Here I post about some music that I like.</h2>
-        
-            <ul>
-            <li> <a href="Articles/article1.html"> <button class="button"> My Favorite Albums Pt. 1 </button> </a> </li>
-            <li> <a href="Articles/article2.html"> <button class="button"> Article 2 </button> </a> </li>
-            <li> <a href="Articles/article3.html"> <button class="button"> Article 3 </button> </a> </li>
-            </ul>
-        </div>
+                    <li><a href='#'> <button class="button">Dashboard </button> </a></li>
+                    
+                    <li>
+                        <details>
+                            <summary>Articles</summary>
+                            <ul>
+                                <li> <a href="Articles/articles.html"> <button class="button"> All Articles </button> </a> </li>
+                                <li> <a href="Articles/article1.html"> <button class="button"> My Favorite Albums Pt. 1 </button> </a> </li>
+                                <li> <a href="Articles/article2.html"> <button class="button"> Article 2 </button> </a> </li>
+                                <li> <a href="Articles/article3.html"> <button class="button"> Article 3 </button> </a> </li>
+                            </ul>
+                        </details>
+                    </li>
 
-        <a href="Articles/about.html"> <button class="button"> About this project </button> </a>
+                    <li>
+                        <details>
+                            <summary>Infos</summary>
+                            <ul>
+                                <li> <a href="Articles/about.html"> <button class="button"> About this project </button> </a> </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="container-h1">
+                <h1>Cool Music</h1>
+            </div>
 
-    </head>
+
+
+            <div class="container-1">
+                <h2>Welcome! Here I post about some music that I like.</h2>
+    
+                <ul>
+                <li> <a href="Articles/article1.html"> <button class="button"> My Favorite Albums Pt. 1 </button> </a> </li>
+                <li> <a href="Articles/article2.html"> <button class="button"> Article 2 </button> </a> </li>
+                <li> <a href="Articles/article3.html"> <button class="button"> Article 3 </button> </a> </li>
+                </ul>
+            </div>
+            <a href="Articles/about.html"> <button class="button"> About this project </button> </a>
+        </main>
+    </div>
+</body>
 </html>
