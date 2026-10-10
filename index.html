@@ -3,41 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Music</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="layout-container">
-        <aside class="sidebar">
-            <nav>
-                <ul class="sidebar -menu">
-
-                    <li><a href='#'> <button class="button">Dashboard </button> </a></li>
-                    
-                    <li>
-                        <details>
-                            <summary>Articles</summary>
-                            <ul>
-                                <li> <a href="Articles/articles.html"> <button class="button"> All Articles </button> </a> </li>
-                                <li> <a href="Articles/article1.html"> <button class="button"> My Favorite Albums Pt. 1 </button> </a> </li>
-                                <li> <a href="Articles/article2.html"> <button class="button"> Article 2 </button> </a> </li>
-                                <li> <a href="Articles/article3.html"> <button class="button"> Article 3 </button> </a> </li>
-                            </ul>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details>
-                            <summary>Infos</summary>
-                            <ul>
-                                <li> <a href="Articles/about.html"> <button class="button"> About this project </button> </a> </li>
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        <div id="sidebar"></div>
         <main class="content">
             <div class="container-h1">
                 <h1>Cool Music</h1>
@@ -46,16 +17,24 @@
 
 
             <div class="container-1">
-                <h2>Welcome! Here I post about some music that I like.</h2>
+                <h2>Welcome!</h2>
+                <p>On this website I post about some of the music that I like and my opinion on it. You can read through some of them, if you like.</p>
     
                 <ul>
-                <li> <a href="Articles/article1.html"> <button class="button"> My Favorite Albums Pt. 1 </button> </a> </li>
-                <li> <a href="Articles/article2.html"> <button class="button"> Article 2 </button> </a> </li>
-                <li> <a href="Articles/article3.html"> <button class="button"> Article 3 </button> </a> </li>
+                <li> <a href="Articles/recentarticles.html"> <button class="button"> Recent Articles </button> </a> </li>
+                <li> <a href="Articles/article0001.html"> <button class="button"> My Favorite Albums Pt. 1 </button> </a> </li>
+                <li> <a href="Articles/article0002.html"> <button class="button"> My Favorite Albums Pt. 2 </button> </a> </li>
                 </ul>
             </div>
-            <a href="Articles/about.html"> <button class="button"> About this project </button> </a>
         </main>
     </div>
+
+        <script>
+        fetch('sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
 </body>
 </html>

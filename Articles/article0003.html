@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+<body>
+    <div class="layout-container">
+        <div id="sidebar"></div>
+
+        <main class="content">
+            <div class="container-h1">
+                <h1>Concert: System Of A Down, Berlin 2026</h1>
+            </div>
+            
+            <img src="https://www.shop-olympiastadion.berlin/wp-content/uploads/2025/09/SOAD.png" alt="Concert Poster" 
+            style="display: block; margin-left: auto; margin-right: auto; width: 50%; max-width: 400px; height: auto; border-radius: 12px;">
+
+            <div class="container-1">
+                <h2>System Of A Down live in Berlin</h2>
+                <p> This concert was truly a one of a kind experience. The concert started with the first support act Acid Bath playing their song 
+                    <i>Tranquilized</i> and concluded with System Of A Down's <i>Sugar</i>. From start to finish the concert had gone roughly four hours (including breaks), 
+                    starting with Acid Bath playing a 30 minutes long set, which was an absolute highlight for me, as they count as one of the most influential bands 
+                    in the sludge metal genre. After that the second support act, Queens of the Stone Age played a one hour long set, including Hits like <i>The Lost Art of
+                    Keeping a secret, Go With the Flow</i> and <i>No One Known</i>. Then, at around 8 p.m. SOAD opened with <i>Soldier Side - Intro</i>, playing a total of
+                    31 songs over 1h 40min. The setlist included all of the big songs like <i>B.Y.O.B., Chop Suey!, Lonely Day, Aerials</i> and of course <i>Toxicity</i>.
+                    Though there was still some room left for some deeper cuts, especially from their self-titled debut including <i>Darts</i> or <i>DAM</i> from their
+                    1995 Demo Tape 1.
+                </p>
+            </div>
+
+            <div class="container-1">
+                <h2>The Setlist</h2>
+                <h3>Acid Bath</h3>
+                <p>
+                    1. Tranquilized <br>
+                    2. Bleed Me an Ocean <br>
+                    3. Graveflower <br>
+                    4. Dead Girl <br>
+                    5. Paegan Love Song<br>
+                </p>
+                <h3>Queens of the Stone Age</h3>
+                <p>
+                    1. Regular John <br>
+                    2. The Lost Art of Keeping a Secret <br>
+                    3. Feel Good Hit of the Summer <br>
+                    4. Sick, Sick, Sick <br>
+                    5. The Fun Machine Took a Shit and Died <br>
+                    6. Paper Machete <br>
+                    7. My God Is the Sun <br>
+                    8. Run, Pig, Run <br>
+                    9. Little Sister <br>
+                    10. Go With thw Flow <br>
+                    11. No One Known <br>
+                    12. A Song for the Dead <br>
+                </p>
+                <h3>System Of A Down</h3>
+                <p>
+                    1. Soldied Side - Intro <br>
+                    2. B.Y.O.B. <br>
+                    3. Suite-Pee <br>
+                    4. Chic 'N' Stu <br>
+                    5. Prison Song <br>
+                    6. Violent Pornography <br>
+                    7. I-E-A-I-A-I-O <br>
+                    8. Darts <br>
+                    9. Genocidal Humanoidz <br>
+                    10. Needles <br>
+                    11. Deer Dance <br>
+                    12. Radio/Video <br>
+                    13. Bubbles <br>
+                    14. Dreaming <br>
+                    15. Hypnotize <br>
+                    16. ATWA <br>
+                    17. Bounce <br>
+                    18. Suggestions <br>
+                    19. Psycho <br>
+                    20. Chop Suey! <br>
+                    21. Lonely Day <br>
+                    22. Lost in Hollywood <br>
+                    23. Streamline <br>
+                    24. Aerials <br>
+                    25. Spiders <br>
+                    26. Forest <br>
+                    27. DAM <br>
+                    28. War? <br>
+                    29. Roulette <br>
+                    30. Toxicity <br>
+                    31. Sugar
+                </p>
+            </div>
+
+            <p>Published: 2026-10-10</p>
+
+        </main>
+    </div>
+    <script>
+        fetch('../sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
+</body>

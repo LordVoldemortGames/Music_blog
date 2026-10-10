@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+    <div class="layout-container">
+
+        <div id="sidebar"></div>
+
+        <main class="content">
+        <div class="container-h1">
+            <h1>My Favorite Albums Pt. 1: Violator by Depeche Mode</h1>
+        </div>
+
+        <img src="https://www.depechemode.de/wp-content/uploads/2011/06/depeche-mode-violator-520x520.jpg" alt="Violator Album Cover" 
+            style="display: block; margin-left: auto; margin-right: auto; width: 50%; max-width: 400px; height: auto; border-radius: 12px;">
+
+        <div class="container-1">
+            <h2>A little bit of history</h2>
+
+            <P> Violator is the seventh studio album by the british synth-pop band Depeche Mode, released in 1990. It is until today their most successful album with over 
+                15 million copies sold. </P>
+                <p> The album features major hits like "Personal Jesus" and "Enjoy the Silence" which helped the album to reach the top ten of the charts in several 
+                    countries. Further it is the first album of the band to feature acoustic instruments like guitars as can be heard in Personal Jesus.</p>
+        </div>
+
+        <div class="container-1">
+            <h2>Tracklist</h2>
+
+            <P> 
+                <a href="https://music.youtube.com/watch?v=nhZdL4JlnxI&si=SSpd430PXItMAxrA">1. World in My Eyes</a> <br>
+                <a href="https://music.youtube.com/watch?v=TvyuSvMKVCQ&si=aUSQeKlAGBZI587s">2. Sweetest Perfection</a> <br>
+                <a href="https://music.youtube.com/watch?v=u1xrNaTO1bI&si=okx5v6IoF48_8A6J">3. Personal Jesus</a> <br>
+                <a href="https://music.youtube.com/watch?v=iEH4eqtK8SU&si=dzcDeazlIk01YknF">4. Halo</a> <br>
+                <a href="https://music.youtube.com/watch?v=s0Ev7Z2_SFM&si=Bq1DLtk_u5QXdTga">5. Waiting for the Night</a> <br>
+                <a href="https://music.youtube.com/watch?v=aGSKrC7dGcY&si=V3crM92dGjJ1fC-w">6. Enjoy the Silence</a> <br>
+                <a href="https://music.youtube.com/watch?v=M2VBmHOYpV8&si=svvJ7c4UlgSRoUwv">7. Policy of Truth</a> <br>
+                <a href="https://music.youtube.com/watch?v=tX9H_TJwW_A&si=Lqdqtu4suckjwwyF">8. Blue Dress</a> <br>
+                <a href="https://music.youtube.com/watch?v=h1mD-_DKHc0&si=PzMgrb2oNyVXzjW0">9. Clean</a> <br>
+                <br>
+                Total length: 46:52
+            </P>
+        </div>
+
+        <div class="container-1">
+            <h2>What I Like About This Album</h2>
+            <p> I think this album is a masterpiece in the synth-pop genre. The production quality is exceptional and it got some of the catchiest songs I know. The
+                atmosphere of the album is for most parts dark and melancholic like in Halo or World in My Eyes, but it also got some more energetic songs like
+                Personal Jesus or Enjoy the Silence. Dave Gahan's powerful and emotional voice is a perfect fit for this heavy sound while Martin Gore's
+                high-pitched and almost even fragile vocals fit as a great contrast to Gahan's voice.
+                It is also the album that got me into Depeche Mode and into synth-pop in general.  </p>
+        </div>
+
+        <p>Published: 2026-10-09</p>
+
+    </main>
+    <script>
+        fetch('../sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
+</body>

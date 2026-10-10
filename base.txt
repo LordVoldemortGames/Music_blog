@@ -1,12 +1,23 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <style>
-            body {
-                background-color: #171818;
-            }
-        </style>
-        <link rel="stylesheet" href="style.css">
-
-
+        <link rel="stylesheet" href="../style.css">
     </head>
+
+<body>
+    <div class="layout-container">
+        <div id="sidebar"></div>
+
+        <main class="content">
+            
+            
+        </main>
+    </div>
+    <script>
+        fetch('../sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
+</body>

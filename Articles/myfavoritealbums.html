@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="../style.css">
-    </head>
+<head>
+    <style>
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
 
 <body>
     <div class="layout-container">
@@ -10,14 +12,12 @@
 
         <main class="content">
             <div class="container-h1">
-                <h1>About this project</h1>
+                <h1>My Favorite Albums</h1>
             </div>
 
-            <div class="container-1">
-                <h2>What is this project about?</h2>
+            <div class="article-grid" id="card-grid" data-tag="MyFavoriteAlbums" data-sort="desc">
+            </div>
 
-                <p> This project is a simple website that I created to practice my HTML and CSS skills. It features a sidebar with navigation links, 
-                    a main content area, and several articles about music that I like. </p>
             </div>
         </main>
     </div>
@@ -28,4 +28,5 @@
                 document.getElementById('sidebar').innerHTML = data;
             });
     </script>
+    <script src="/cards.js"></script>
 </body>

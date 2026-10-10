@@ -2,29 +2,35 @@
 <html lang="en">
 <head>
     <style>
-        body {
-            background-color: #171818;
-        }
     </style>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <div class="container-h1">
-        <h1>All Articles</h1>
-    </div>
+    <div class="layout-container">
+        <div id="sidebar"></div>
 
-    <div class="article-grid">
-
-        <div class="article-card">
-            <img src="https://www.depechemode.de/wp-content/uploads/2011/06/depeche-mode-violator-520x520.jpg" alt="https://www.depechemode.de/diskografie/album/violator/" class="article-image">
-            <div class="article-body">
-                <h2>My Favorite Albums Pt. 1</h2>
-                <p> Violator by Depeche Mode </p>
-                <a href="article1.html"> <button class="button"> Read More </button> </a>
+        <main class="content">
+            <div class="container-h1">
+                <h1>All Articles</h1>
             </div>
-        </div>
 
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for title or tag...">
+            </div>
+
+            <div class="article-grid" id="card-grid" data-tag="all" data-sort="asc">
+            </div>
+
+            </div>
+        </main>
     </div>
-
+    <script>
+        fetch('../sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
+    <script src="/cards.js"></script>
 </body>
